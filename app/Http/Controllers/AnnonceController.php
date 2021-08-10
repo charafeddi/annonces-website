@@ -12,7 +12,7 @@ class AnnonceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index()
     {
         //
         $row=DB::table('categories')->get();
