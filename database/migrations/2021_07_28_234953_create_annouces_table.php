@@ -14,17 +14,16 @@ class CreateAnnoucesTable extends Migration
     public function up()
     {
         Schema::create('annouces', function (Blueprint $table) {
-            $table->id('id-annouce');
+            $table->id('id');
             $table->string('title');
             $table->text('description');
             $table->string('city',100);
-            $table->boolean('price')->nullable();//null because he can let it empty
+            $table->double('price')->nullable();//null because he can let it empty
 
             //adding the foreign key 
-            $table->foreignId('id')->constrained('users');
-            $table->foreignId('id_subcategory')->constrained('subcategories');//subcategorie 
-            $table->foreignId('id_image')->constrained('imageables');
-
+            $table->foreignId('user_id')->constrained();
+            $table->foreignId('category_id')->constrained();
+            
             $table->timestamps();
         });
     }

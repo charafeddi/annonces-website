@@ -20,9 +20,10 @@
         <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
         <link href="{{asset('assets/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{asset('assets/plugins/font-awesome/css/all.min.css')}}" rel="stylesheet">
+        <link href="{{asset('assets/plugins/select2/css/select2.min.css')}}" rel="stylesheet">
 
-      
-        <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{asset('assets/plugins/jquery/jquery-3.4.1.min.js')}}"></script>
+        <!--<script src="{{ asset('js/app.js') }}" defer></script>-->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <!-- Theme Styles -->
         <link href="{{asset('assets/css/connect.min.css')}}" rel="stylesheet">
